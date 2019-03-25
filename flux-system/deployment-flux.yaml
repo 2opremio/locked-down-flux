@@ -54,7 +54,7 @@ spec:
             - --ssh-keygen-dir=/var/fluxd/keygen
             - --git-url=git@github.com:2opremio/locked-down-flux.git
             - --git-branch=deploy
-            - --git-path=helloworld-flux/
+            - --git-path=helloworld-flux,helloworld2-flux
             - --git-ci-skip
-            - --k8s-namespace-whitelist=helloworld
+            - --k8s-namespace-whitelist=helloworld,helloworld2
             - --listen-metrics=:3031
